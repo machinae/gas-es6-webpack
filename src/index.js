@@ -8,5 +8,16 @@
  * https://developers.google.com/apps-script/guides/triggers/
  */
 
+// NOTE: imports must be as below. default exports and wildcard exports are NOT
+// supported
+
 import {helloWorld} from 'hello'
-global.helloWorld = helloWorld
+import {config} from 'config'
+
+global.sayHello = function () {
+  helloWorld(config.name)
+}
+
+global.sayBye = function () {
+  helloWorld('joe')
+}
