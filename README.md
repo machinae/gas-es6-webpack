@@ -5,7 +5,7 @@ GAS is powerful, but its tooling is less than ideal. This repo serves as an exam
 ## Usage
 
 1. Clone this repo
-1. Run `npm install`
-1. Add your GAS code to `src/index.js`
-1. Run `npm run build`
-1. Paste the contents of `dist/Code.gs` into the GAS editor's `Code.gs` file
+2. Run `yarn install`
+3. Add your GAS code to `src/index.js`
+4. Run `yarn run build`
+5. Paste the contents of `dist/Code.gs` into the GAS editor's `Code.gs` file
