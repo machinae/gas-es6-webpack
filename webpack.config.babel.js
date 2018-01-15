@@ -1,5 +1,6 @@
 import path from 'path';
 import webpack from 'webpack';
+var GasPlugin = require("gas-webpack-plugin");
 
 export default {
   entry: [path.join(__dirname, 'src/index.js')],
@@ -23,5 +24,6 @@ export default {
     ],
   },
   plugins: [
+    new GasPlugin()
   ]
 };
