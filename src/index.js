@@ -8,7 +8,5 @@
  * https://developers.google.com/apps-script/guides/triggers/
  */
 
-// import helloWorld from 'hello'
-// global.helloWorld = helloWorld
-var hello = require('./hello');
-global.hello = hello.helloWorld;
+import {helloWorld} from 'hello'
+global.helloWorld = helloWorld

@@ -1,5 +1,6 @@
 module.exports = {
-  helloWorld () {
+  helloWorld() {
     SpreadsheetApp.getActiveSheet().getRange('A1').setValue('Hello world!');
   }
 }
+
