@@ -8,6 +8,7 @@
  * https://developers.google.com/apps-script/guides/triggers/
  */
 
-export const helloWorld = () => {
-  SpreadsheetApp.getActiveSheet().getRange('A1').setValue('Hello world!');
-};
+// import helloWorld from 'hello'
+// global.helloWorld = helloWorld
+var hello = require('./hello');
+global.hello = hello.helloWorld;

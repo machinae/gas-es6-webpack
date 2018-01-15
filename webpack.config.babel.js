@@ -1,6 +1,8 @@
 import path from 'path';
 import webpack from 'webpack';
 
+import GasPlugin from 'gas-webpack-plugin'
+
 export default {
   entry: [path.join(__dirname, 'src/index.js')],
   module: {
@@ -22,4 +24,7 @@ export default {
       path.join(__dirname, 'node_modules'),
     ],
   },
+  plugins: [
+    new GasPlugin()
+  ]
 };
